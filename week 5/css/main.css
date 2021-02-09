@@ -1,0 +1,24 @@
+body {
+color: darkslategray;
+font-family: Arial, Helventica, sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    background-color: lightblue;
+}
+
+/* selecting multiple elments to apply same style */
+h1,
+h2,
+h3,
+h4 {
+    text-decoration: underline;
+}
+
+nav ul {
+    
+}
