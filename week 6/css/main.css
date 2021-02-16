@@ -1,13 +1,31 @@
 /* Command + / to add a comment block */
+
+html {
+  font-size: 10px;
+}
+
 body {
-  color: darkslategray;
+  /* !important will overwrite the cascading */
+  color: darkslategray !important;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/white_brick_wall.png");
+
+  /* background-repeat: no-repeat; */
+  /* x-axis y-axais */
+  /* background-position: 100px 200px; */
+  /* background-size: cover; */
+}
+
+/* cascading */
+body {
+  color: red
 }
 
 h1 {
   color: white;
 }
 
+/* specificity: 0001 */
 p {
   background-color: lightblue;
 }
@@ -29,9 +47,12 @@ nav ul {
 nav ul a {
   color: darkslategray;
   text-decoration: none;
+  font-size: 1.5rem;
+  /* 1.5rem x 16px =24px */
 }
 
 /* class name selector */
+/* specificity: 0010 */
 .orange-link {
   background-color: darkslategray;
   color: orange;
@@ -39,8 +60,25 @@ nav ul a {
 }
 
 /* id selector */
+/* specificity 0100 */
 #treatofweek {
-  background-color: orange;
+  /* background-color: orange; */
+  /* color image repeat */
+  background: darkslategray url("../images/bread.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5rem;
+  /* 1.5 x 16px =24 */
+  /* em is for element's font size */
+  padding: 1em;
+  /* 1 x 1.5rem = 1 x 1.5 x 16px = 24px */
+width: 50%;
+}
+
+/* overwriting the background-color for nth-child list items */
+/* 0103 */
+#treatoftheweek dl ul li {
+  background-color: transparent;
 }
 
 /* Avoid using id for styling, use classes mostly */
