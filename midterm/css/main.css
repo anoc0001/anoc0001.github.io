@@ -1,0 +1,140 @@
+/* ctrl + / to add comment */
+
+html {
+    font-size: 12px;
+}
+/* specificity: 001 */
+html{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+/* element class=box */
+/* specificity 010 */
+.box{
+    width: 5px;
+    height: 0px;
+    border: 0px #aad4cf;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.box1{
+    background-color: #aad4cf ;
+    position: relative;
+    left: 150px;
+    bottom: 10px;
+}
+
+/* specificity: 001 */
+body {
+    /* !important will overwrite the cascading */
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+
+}
+
+body {
+    width: 80%;
+    background-color: rgba(255,255,255);
+    border: 1px solid #aad4cf;
+    
+
+
+}
+
+
+/* cascading */
+body {
+    color: black;
+}
+
+h1 {
+    color: #aad4cf;
+
+    background: white url("../images/lone-starfish-wide.jpg") no-repeat center;
+    background-size: cover;
+    color: white;
+    font-size: 3em;
+    padding: 3em;
+    width: 100%;
+}
+
+aside{
+    outline: 1px solid black;
+}
+
+header {
+    padding: 25px;
+    text-align: center;
+    text-transform: none;
+    color: white;
+    background-image: url();
+}
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+}
+img{
+    width: 150px;
+    float: left;
+}
+/* descendant selector */
+/* specificity: 0010 */
+.nav__links {
+    list-style: none;
+
+}
+/* LoVe HAte */
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    text-decoration: none;
+    
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    text-decoration: underline;
+}
+
+nav{
+    background: none;
+    text-align: center;
+    padding: 10px 0px;
+}
+/* display and Box sizing */
+.nav__links li {
+    display:inline-block;
+    padding: 10px 0px;
+    margin-left: 100px;
+    border-left: 1px solid black;
+    width: 200px;
+    color: black;
+    font-size: 15px;
+    transition: 4s;
+    
+    
+}
+/* specificity 0012 */
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    
+    
+}
+
+.nav__links li a:hover {
+    color: #fff;
+}
+
+
+

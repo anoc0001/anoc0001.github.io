@@ -2,27 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf"-8>
+    <meta charset="utf-8">
     <title>Lone Starfish - Home</title>
     <link rel="stylesheet" href="css/main.css">
+    
+    
 </head>
 
-<body>
+<body class="box1">
+    <div class="box1"></div>
+        
+        
 
     <!-- inline style using the style attribute -->
+    <!-- *****header of the page****** -->
     <header>
+
+        
         <h1>Lone Starfish</h1>
+
+        <!-- Navigation gives the class name -->
         <nav>
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="story.html">STORY</a>
-                </li>
-                <li>
-                    <a href="contact.html">CONTACT</a>
-                </li>
+            <ul class="nav__links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">STORY</a></li>
+                <li><a href="#">CONTACT</a></li>
             </ul>
         </nav>
 
@@ -35,7 +39,7 @@
                 <h2>Life of a Starfish</h2>
                 <!-- adding image -->
                 <img src="images/lone-starfish.jpg" alt="startfish" style="float: left;">
-                <p>
+                <p style="margin-right: 20rem; margin-bottom: 1rem;">
                     Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
  
                 </p>
@@ -51,9 +55,48 @@
                     </ul>
                 </section>
             </article>
+            <aside>
+                <h4>Contact to learn more</h4>
+                <form action="/action_page.php">
+                    <div>
+                        <label for="fullname">Your Name</label>
+                        <input type="text" id="fullname" name="fullname" size="100"><br><br>
+                    </div>    
+                    
+                    <div>
+                        <label for="youremail">Your Email</label>
+                    <!-- required a boolean attribute, it only needs to be set by its name -->
+                    <input type="email" id="youremail" name="youremail" size="100">
+                    </div>
+
+                    <div>
+                        <label for="message">Your Message</label>
+                        <textarea name="message" rows="4" cols="100" id="message"></textarea>
+                    </div>
+                    <div>
+                        <h4>Would you like to visit the Starfish?</h4>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="past" id="yes">
+                        <label for="no">No</label>
+                        <input type="radio" name="past" id="no">
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" name="past" id="maybe">
+
+                    </div>
+                    <button type="submit">SEND</button>
+                    
+
+                </form>    
+            </aside>
         </div>
 
     </main>
+    <!-- *********footer of the page******* -->
+    <Footer>
+        <p style="margin-left: 60rem; margin-bottom: 0rem;">
+            &copy;Lone Starfish.
+        </p>
+    </Footer>
 
 
 </body>
