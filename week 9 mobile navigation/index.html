@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Navigation</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="box one">One</div>
+        <div class="box two">Two</div>
+        <div class="box three">Three</div>
+        <div class="box four">Four</div>
+      </section>
+      
+      .container{
+        display: flex;
+      }
+      .one{
+        order: 1;
+      }
+      .three{
+        order: -1;
+      }
+      .four{
+        order: -2;
+      }
+      <div class="cards">
+        <div class="card">A</div>
+        <div class="card">B</div>
+        <div class="card">C</div>
+        <div class="card">D</div>
+      </div>
+</body>
+</html>
